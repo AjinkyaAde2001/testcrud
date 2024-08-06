@@ -56,6 +56,15 @@ public Student getstudentbyid(Long id) {
                          .getSingleResult();
      return student;
 }
+@Override
+public Subject getsubyid(Long id) {
+	// TODO Auto-generated method stub
+	String sql = "select s from Subject s where s.id = :id";
+    Subject subject = et.createQuery(sql, Subject.class)
+                        .setParameter("id", id)
+                        .getSingleResult();
+	return subject;
+}
 
 }
 

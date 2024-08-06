@@ -39,4 +39,9 @@ public Student getStudentById(long id) {
 Student s=	dao.getstudentbyid(id);
 	return s;
 }
+public Subject getSubjecttById(Long id) {
+	// TODO Auto-generated method stub
+	Subject s=	dao.getsubyid(id);
+	return s;
+}
 }

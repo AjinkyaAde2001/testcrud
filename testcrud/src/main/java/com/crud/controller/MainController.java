@@ -101,10 +101,19 @@ UserService service;
     
         	   System.out.println(id);
                Student student = service.getStudentById(id);
+               
+               System.out.println("student name "+student.getName());
+                 return new ResponseEntity<>(student, HttpStatus.OK);
               
-            
-            	   System.out.println("student name "+student.getName());
-                   return new ResponseEntity<>(student, HttpStatus.OK);
+         
+       }
+       @GetMapping("/subject/list/{id}")
+       public ResponseEntity<Subject> getsubById(@PathVariable Long id) {
+    
+        	   System.out.println(id);
+               Subject subject = service.getSubjecttById(id);
+               System.out.println("student name "+subject.getName());
+                return new ResponseEntity<>(subject, HttpStatus.OK);
               
          
        }
