@@ -51,7 +51,7 @@ This project provides a REST API for managing students and subjects, including f
     - **200 OK**: List of students
     - **500 Internal Server Error**
 - **GET** `http://localhost:8088/student/list/id`
-  - **Description**: Get students by id no.
+  - **Description**: Get student by id no.
   - **Response**:
     - **200 OK**: single object of student
     - **500 Internal Server Error**
@@ -71,6 +71,13 @@ This project provides a REST API for managing students and subjects, including f
   - **Description**: Get a list of all subjects.
   - **Response**:
     - **200 OK**: List of subjects
+
+     - **GET** `http://localhost:8088/subject/list/id`
+  - **Description**: Get subject by id no.
+  - **Response**:
+    - **200 OK**: single object of subject
+    - **500 Internal Server Error** 
+
 ## Things Not Completed
 
 - **JWT-based Login**: Implementation of JWT-based authentication and authorization is not yet completed.
