@@ -8,7 +8,7 @@ This project provides a REST API for managing students and subjects, including f
 - Maven
 - Spring Boot
 - H2 Database (In-memory)
-- Spring Security
+
 ### Accessing the H2 Database Console
 
 1. **Start the application**.
@@ -24,6 +24,7 @@ This project provides a REST API for managing students and subjects, including f
 **Base URL**
 `http://localhost:8088`
 - You can use postman to test these url
+
 **Test Endpoint**
 - **GET** `http://localhost:8088/test`
   - **Description**: Returns a test message.
@@ -50,9 +51,9 @@ This project provides a REST API for managing students and subjects, including f
     - **200 OK**: List of students
     - **500 Internal Server Error**
 - **GET** `http://localhost:8088/student/list/id`
-  - **Description**: Get students by id.
+  - **Description**: Get students by id no.
   - **Response**:
-    - **200 OK**: List of students
+    - **200 OK**: single object of student
     - **500 Internal Server Error**
 **Subject Endpoints**
 - **POST** `http://localhost:8088/subject/save`
