@@ -4,7 +4,7 @@ This project provides a REST API for managing students and subjects, including f
 
 ## Requirements
 
-- Java 19 and above (best with java 21)
+- Java 19 and above (best performance with java 21)
 - Maven
 - Spring Boot
 - H2 Database (In-memory)
@@ -12,7 +12,7 @@ This project provides a REST API for managing students and subjects, including f
 ### Accessing the H2 Database Console
 
 1. **Start the application**.
-2. **for opening the H2 Console**:
+2. **For opening the H2 Console**:
 - Navigate to `http://localhost:8088/h2-console` in your web browser.
 - driver class `org.h2.Driver`
 - **Database URL**: `jdbc:h2:mem:testdb`
