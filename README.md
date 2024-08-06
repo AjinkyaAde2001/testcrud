@@ -49,7 +49,11 @@ This project provides a REST API for managing students and subjects, including f
   - **Response**:
     - **200 OK**: List of students
     - **500 Internal Server Error**
-
+- **GET** `http://localhost:8088/student/list/id`
+  - **Description**: Get students by id.
+  - **Response**:
+    - **200 OK**: List of students
+    - **500 Internal Server Error**
 **Subject Endpoints**
 - **POST** `http://localhost:8088/subject/save`
   - **Description**: Save a new subject.
