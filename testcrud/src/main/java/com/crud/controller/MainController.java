@@ -96,4 +96,16 @@ UserService service;
 		return list;
     	   
        }
+       @GetMapping("/student/list/{id}")
+       public ResponseEntity<Student> getStudentById(@PathVariable Long id) {
+    
+        	   System.out.println(id);
+               Student student = service.getStudentById(id);
+              
+            
+            	   System.out.println("student name "+student.getName());
+                   return new ResponseEntity<>(student, HttpStatus.OK);
+              
+         
+       }
 }

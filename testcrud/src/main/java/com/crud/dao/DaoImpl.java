@@ -47,6 +47,15 @@ public List<Subject> getsubject() {
 	List<Subject> sub=et.createQuery("from Subject",Subject.class).getResultList();
 	return sub;
 }
+@Override
+public Student getstudentbyid(Long id) {
+	// TODO Auto-generated method stub
+	 String sql = "select s from Student s where s.id = :id";
+     Student student = et.createQuery(sql, Student.class)
+                         .setParameter("id", id)
+                         .getSingleResult();
+     return student;
+}
 
 }
 

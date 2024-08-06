@@ -34,4 +34,9 @@ public List<Subject> getsub() {
 		// TODO Auto-generated method stub
 		return dao.getsubject();
 	}
+public Student getStudentById(long id) {
+	// TODO Auto-generated method stub
+Student s=	dao.getstudentbyid(id);
+	return s;
+}
 }

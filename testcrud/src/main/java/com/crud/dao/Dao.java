@@ -14,4 +14,6 @@ public List<Student> getstudent();
 
 public List<Subject> getsubject();
 
+public Student getstudentbyid(Long id);
+
 }
