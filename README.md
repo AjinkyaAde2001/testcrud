@@ -23,7 +23,7 @@ This project provides a REST API for managing students and subjects, including f
 
 **Base URL**
 `http://localhost:8088`
-You can use postman to test these url
+- You can use postman to test these url
 **Test Endpoint**
 - **GET** `http://localhost:8088/test`
   - **Description**: Returns a test message.
