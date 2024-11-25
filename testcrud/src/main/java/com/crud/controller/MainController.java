@@ -110,7 +110,7 @@ UserService service;
        @GetMapping("/subject/list/{id}")
        public ResponseEntity<Subject> getsubById(@PathVariable Long id) {
     
-        	   System.out.println(id);
+        
                Subject subject = service.getSubjecttById(id);
                System.out.println("student name "+subject.getName());
                 return new ResponseEntity<>(subject, HttpStatus.OK);
