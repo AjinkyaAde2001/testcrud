@@ -4,7 +4,7 @@ This project provides a REST API for managing students and subjects, including f
 
 ## Requirements
 
-- Java 19 and above (best performance with java 21)
+- Java 17 and above (best performance with java 21)
 - Maven
 - Spring Boot
 - H2 Database (In-memory)
